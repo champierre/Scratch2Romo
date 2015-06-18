@@ -211,12 +211,12 @@ static void AudioInputCallback(
         // Give Romo the drive command
         if (steps > 0) {
             [self.Romo3 driveBackwardWithSpeed: speedInMetersPerSecond];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * steps * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * (steps / 10.0) * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                 [self stop];
             });
         } else {
             [self.Romo3 driveForwardWithSpeed: speedInMetersPerSecond];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * -steps * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * (-steps / 10.0) * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                 [self stop];
             });
         }
