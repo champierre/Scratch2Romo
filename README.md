@@ -45,7 +45,6 @@ Connect をタップします。Connected と表示されたら接続 OK です�
 - left: 左に曲がる
 - up: 上を向く
 - down: 下を向く
-
 - photo: 写真を撮る
 - light on: ライト点灯
 - light off: ライトを消す
