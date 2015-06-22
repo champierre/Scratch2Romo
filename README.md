@@ -39,24 +39,30 @@ scratch host address に Scratch が起動している端末の IP アドレス�
 Connect をタップします。Connected と表示されたら接続 OK です。
 
 ## Scratch から Romo に送れる命令
-- forward: 前進
-- backward: 後退
-- right: 右に曲がる
-- left: 左に曲がる
-- up: 上を向く
-- down: 下を向く
-- photo: 写真を撮る
-- light on: ライト点灯
-- light off: ライトを消す
+| コマンド  | 説明        |
+| --------- | ----------- |
+| forward   | 前進        |
+| backward  | 後進        |
+| right     | 右に曲がる  |
+| left      | 左に曲がる  |
+| up        | 上を向く    |
+| down      | 下を向く    |
+| photo     | 写真を撮る  |
+| light on  | ライト点灯  |
+| light off | ライトを消す|
 
 ## スクラッチからセットできる変数
-- speed (0 - 100): Romo のスピード
-- degrees (0 - 360): 曲がるときの角度
-- steps (-100 - 100): forward または backward を命令したときの進む距離
+| 変数名    | 範囲       | 説明                                             |
+| --------- | ---------- | ------------------------------------------------ |
+| speed     | 0 - 100    | Romo のスピード                                  |
+| degrees   | 0 - 360    | 曲がるときの角度                                 |
+| steps     | -100 - 100 | forward または backward を命令したときの進む距離 |
 
 ## センサーの値として取得できるもの
-- heading (0 - 360): Romo の向いている方向、北が 0
-- audio (-30 - 0): iPhone のマイクが取る音量レベル
+| 変数名    | 範囲    | 説明                            |
+| --------- | ------- | ------------------------------- |
+| heading   | 0 - 360 | Romo の向いている方向、北が 0   |
+| audio     | -30 - 0 | iPhone のマイクが取る音量レベル |
 
 PC/Mac にインストールした Scratch であれば添付したサンプルプログラム
 scratch2romo_test.sb を開いてお使いいただくのが良いかと思います。
