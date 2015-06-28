@@ -55,6 +55,10 @@ static void AudioInputCallback(
     degrees = 10;
     steps = 10;
     speed = 30;
+
+    expression = 0;
+    emotion = 0;
+
     faceAppeared = NO;
 
     _hostAddressTextField.text = ipRange;
@@ -165,6 +169,11 @@ static void AudioInputCallback(
 
 - (void)disconnect {
     [asyncSocket disconnect];
+}
+
+- (void)change {
+    [self showMessage:@"Change"];
+    [self.RomoCharacter setExpression:expression withEmotion:emotion];
 }
 
 - (void)forward {
@@ -555,7 +564,8 @@ static void AudioInputCallback(
     _hostAddressTextField.text = host;
     autoConnecting = NO;
     retryCount = 0;
-    
+
+    [self broadcast:@"change"];
     [self broadcast:@"forward"];
     [self broadcast:@"backward"];
     [self broadcast:@"right"];
@@ -563,8 +573,7 @@ static void AudioInputCallback(
     [self broadcast:@"up"];
     [self broadcast:@"down"];
     [self broadcast:@"stop"];
-    
-    // disable for free version
+
     [self broadcast:@"led on"];
     [self broadcast:@"led off"];
     [self broadcast:@"light on"];
@@ -635,7 +644,9 @@ static void AudioInputCallback(
 {
     if ([message hasPrefix:@"broadcast"]) {
         NSString *action = [message substringWithRange:NSMakeRange(11, [message length] - 12)];
-        if ([action isEqualToString:@"forward"]) {
+        if ([action isEqualToString:@"change"]) {
+            [self change];
+        } else if ([action isEqualToString:@"forward"]) {
             [self forward];
         } else if ([action isEqualToString:@"backward"]) {
             [self backward];
@@ -702,6 +713,14 @@ static void AudioInputCallback(
             } else if([varName isEqualToString:@"\"speech\""]) {
                 speech = newValue;
                 _speechLabel.text = [NSString stringWithFormat:@"speech: %@", newValue];
+            } else if([varName isEqualToString:@"\"expression\""]) {
+                intNewValue = [newValue intValue];
+                expression = intNewValue;
+                _expressionLabel.text = [NSString stringWithFormat:@"expression: %d", intNewValue];
+            } else if ([varName isEqualToString:@"\"emotion\""]) {
+                intNewValue = [newValue intValue];
+                emotion = intNewValue;
+                _emotionLabel.text = [NSString stringWithFormat:@"emotion: %d", intNewValue];
             }
         }
     }

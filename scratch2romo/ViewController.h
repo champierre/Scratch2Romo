@@ -21,6 +21,8 @@
     int degrees;
     int steps;
     int speed;
+    int expression;
+    int emotion;
     AudioQueueRef queue;
     NSTimer *timer;
     CMMotionManager *motionManager;
@@ -39,6 +41,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *hostAddressTextField;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *expressionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emotionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stepsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *degreesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
@@ -56,6 +60,7 @@
 @property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 @property (strong, nonatomic) AVCaptureSession *session;
 
+- (void)change;
 - (void)up;
 - (void)down;
 - (void)stop;
