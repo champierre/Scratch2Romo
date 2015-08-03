@@ -53,6 +53,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *azLabel;
 @property (weak, nonatomic) IBOutlet UILabel *proximityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speechLabel;
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 
 @property (nonatomic, strong) RMCoreRobotRomo3 *Romo3;
 @property (nonatomic, strong) RMCharacter *RomoCharacter;

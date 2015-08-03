@@ -68,6 +68,9 @@ static void AudioInputCallback(
     _speedLabel.text = [NSString stringWithFormat:@"speed: %d", speed];
     _speechLabel.text = [NSString stringWithFormat:@"speech: %@", speech];
 
+    NSString *appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
+    _versionLabel.text = [NSString stringWithFormat:@"Version: %@", appVersion];
+
     [self setupAVCapture];
     
     [self startMonitoringAudio];

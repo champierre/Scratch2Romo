@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -111,16 +111,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-dO-OjB">
-                                <rect key="frame" x="281" y="532" width="39" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Help">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="helpButtonTouchDown:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G38-TR-Drf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54G-Tf-VvD">
                                 <rect key="frame" x="160" y="127" width="280" height="21"/>
                                 <constraints>
@@ -131,30 +121,35 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Version: 1.0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgn-1X-fMB">
+                                <rect key="frame" x="248" y="540" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Uyx-4K-qR7" secondAttribute="centerX" id="2BF-Dx-g04"/>
                             <constraint firstItem="yzd-3w-zXu" firstAttribute="centerX" secondItem="zqA-wq-AAd" secondAttribute="centerX" id="34y-sc-ClT"/>
                             <constraint firstItem="54G-Tf-VvD" firstAttribute="top" secondItem="zqA-wq-AAd" secondAttribute="bottom" constant="30" id="5AX-vo-J1E"/>
-                            <constraint firstAttribute="centerX" secondItem="OZj-dO-OjB" secondAttribute="centerX" id="8FD-PB-ITT"/>
                             <constraint firstAttribute="centerX" secondItem="RRp-2E-j5i" secondAttribute="centerX" id="BT5-wQ-qPR"/>
                             <constraint firstAttribute="centerX" secondItem="CF8-1w-XDy" secondAttribute="centerX" id="D52-fm-dpL"/>
                             <constraint firstAttribute="centerX" secondItem="XjV-ov-eDm" secondAttribute="centerX" id="E9k-6f-yZu"/>
-                            <constraint firstAttribute="centerX" secondItem="OZj-dO-OjB" secondAttribute="centerX" id="F0D-UK-YVS"/>
                             <constraint firstAttribute="centerX" secondItem="Gbs-wo-XEB" secondAttribute="centerX" id="Fqp-U1-xjZ"/>
                             <constraint firstAttribute="centerX" secondItem="mg2-MV-yMX" secondAttribute="centerX" id="IRW-3Y-nyH"/>
                             <constraint firstItem="yzd-3w-zXu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="ItP-QG-oE7"/>
                             <constraint firstAttribute="centerX" secondItem="3rj-J8-ihL" secondAttribute="centerX" id="ODs-Ok-ZUG"/>
                             <constraint firstAttribute="centerX" secondItem="x4Q-uY-gcL" secondAttribute="centerX" id="PkT-AB-mQJ"/>
                             <constraint firstItem="zqA-wq-AAd" firstAttribute="top" secondItem="yzd-3w-zXu" secondAttribute="bottom" constant="8" symbolic="YES" id="Rco-Ks-OdH"/>
+                            <constraint firstItem="rgn-1X-fMB" firstAttribute="top" secondItem="3rj-J8-ihL" secondAttribute="bottom" constant="24" id="SQj-5Z-sKC"/>
                             <constraint firstAttribute="centerX" secondItem="mg2-MV-yMX" secondAttribute="centerX" id="UqM-Se-I4h"/>
                             <constraint firstAttribute="centerX" secondItem="IHS-4Y-FkK" secondAttribute="centerX" id="b47-1k-0mA"/>
                             <constraint firstAttribute="centerX" secondItem="Rko-jZ-GYP" secondAttribute="centerX" id="dNw-Ll-GZh"/>
-                            <constraint firstAttribute="centerX" secondItem="OZj-dO-OjB" secondAttribute="centerX" id="eJr-WS-6u1"/>
                             <constraint firstItem="54G-Tf-VvD" firstAttribute="centerX" secondItem="zqA-wq-AAd" secondAttribute="centerX" id="ejn-sz-cta"/>
                             <constraint firstAttribute="centerX" secondItem="RRp-2E-j5i" secondAttribute="centerX" id="gGQ-KO-aea"/>
                             <constraint firstItem="yzd-3w-zXu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lZn-HN-20C"/>
+                            <constraint firstAttribute="centerX" secondItem="rgn-1X-fMB" secondAttribute="centerX" id="myT-XO-HYP"/>
                             <constraint firstAttribute="centerX" secondItem="zKE-vC-CAH" secondAttribute="centerX" id="qSn-01-xx2"/>
                             <constraint firstAttribute="centerX" secondItem="UJq-qg-kUv" secondAttribute="centerX" id="snW-hE-hHT"/>
                             <constraint firstItem="yzd-3w-zXu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="srY-Dy-6Pa"/>
@@ -171,7 +166,6 @@
                         <outlet property="emotionLabel" destination="3rj-J8-ihL" id="n7C-Pb-60Z"/>
                         <outlet property="expressionLabel" destination="Uyx-4K-qR7" id="VAL-qP-7f6"/>
                         <outlet property="headingLabel" destination="mg2-MV-yMX" id="EJ5-Bd-mka"/>
-                        <outlet property="helpButton" destination="OZj-dO-OjB" id="mjv-bz-V25"/>
                         <outlet property="hostAddress" destination="yzd-3w-zXu" id="SWg-La-aBQ"/>
                         <outlet property="hostAddressTextField" destination="yzd-3w-zXu" id="z5c-LF-s9j"/>
                         <outlet property="messageLabel" destination="54G-Tf-VvD" id="9hW-p7-K9n"/>
@@ -179,6 +173,7 @@
                         <outlet property="speechLabel" destination="XjV-ov-eDm" id="7Ra-uZ-Tuv"/>
                         <outlet property="speedLabel" destination="IHS-4Y-FkK" id="EA0-q0-9QK"/>
                         <outlet property="stepsLabel" destination="RRp-2E-j5i" id="9Ye-cq-2bR"/>
+                        <outlet property="versionLabel" destination="rgn-1X-fMB" id="t0D-Iu-3M9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
