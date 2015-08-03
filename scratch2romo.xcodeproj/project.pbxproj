@@ -33,8 +33,6 @@
 		6623EFA61A26058F00BDFBA7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623EFA51A26058F00BDFBA7 /* AVFoundation.framework */; };
 		6623EFA81A26059A00BDFBA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623EFA71A26059A00BDFBA7 /* QuartzCore.framework */; };
 		667037821A2AB4AE008875C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667037811A2AB4AE008875C4 /* CoreLocation.framework */; };
-		667E6F3A1A80B6DE00A3DC49 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 667E6F361A80B6DE00A3DC49 /* AcousticModelEnglish.bundle */; };
-		667E6F3D1A80B6DE00A3DC49 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667E6F391A80B6DE00A3DC49 /* Slt.framework */; };
 		667E6F3F1A80B74E00A3DC49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667E6F3E1A80B74E00A3DC49 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +82,6 @@
 		6623EFA51A26058F00BDFBA7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6623EFA71A26059A00BDFBA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		667037811A2AB4AE008875C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		667E6F361A80B6DE00A3DC49 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
-		667E6F391A80B6DE00A3DC49 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		667E6F3E1A80B74E00A3DC49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -98,7 +94,6 @@
 				667037821A2AB4AE008875C4 /* CoreLocation.framework in Frameworks */,
 				6623EFA81A26059A00BDFBA7 /* QuartzCore.framework in Frameworks */,
 				6623EFA61A26058F00BDFBA7 /* AVFoundation.framework in Frameworks */,
-				667E6F3D1A80B6DE00A3DC49 /* Slt.framework in Frameworks */,
 				6623EFA01A26056800BDFBA7 /* ExternalAccessory.framework in Frameworks */,
 				6623EFA41A26057F00BDFBA7 /* RMCharacter.framework in Frameworks */,
 				6623EF9E1A26055F00BDFBA7 /* CoreMotion.framework in Frameworks */,
@@ -208,8 +203,6 @@
 				6623EFA51A26058F00BDFBA7 /* AVFoundation.framework */,
 				6623EF9F1A26056800BDFBA7 /* ExternalAccessory.framework */,
 				6623EF9D1A26055F00BDFBA7 /* CoreMotion.framework */,
-				667E6F361A80B6DE00A3DC49 /* AcousticModelEnglish.bundle */,
-				667E6F391A80B6DE00A3DC49 /* Slt.framework */,
 				6623EFA11A26057F00BDFBA7 /* RMCharacter.bundle */,
 				6623EFA21A26057F00BDFBA7 /* RMCharacter.framework */,
 				6623EF9B1A26052F00BDFBA7 /* RMCore.framework */,
@@ -313,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667E6F3A1A80B6DE00A3DC49 /* AcousticModelEnglish.bundle in Resources */,
 				6623EF781A253E6200BDFBA7 /* Main.storyboard in Resources */,
 				660819571A79CF9800D1B771 /* Icon-76.png in Resources */,
 				6623EF7D1A253E6200BDFBA7 /* LaunchScreen.xib in Resources */,
