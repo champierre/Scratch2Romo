@@ -1,6 +1,7 @@
 # Getting started
 
-README(日本語)はこちら↓
+**README(日本語)**
+
 https://github.com/champierre/Scratch2Romo/blob/master/README_JP.md
 
 **Requirements**
