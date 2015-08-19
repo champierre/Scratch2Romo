@@ -60,6 +60,7 @@ static void AudioInputCallback(
     emotion = 0;
 
     faceAppeared = NO;
+    speeching = NO;
 
     _hostAddressTextField.text = ipRange;
 
@@ -384,7 +385,8 @@ static void AudioInputCallback(
 }
 
 - (void)say {
-    if ([speech length] > 0) {
+    if ([speech length] > 0 && !speeching) {
+        speeching = YES;
         [self pauseMonitoringAudio];
 
         AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speech];
@@ -749,12 +751,14 @@ static void AudioInputCallback(
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance
 {
+    speeching = NO;
     [self resumeMonitoringAudio];
     NSLog(@"didCancelSpeech");
 }
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
+    speeching = NO;
     [self resumeMonitoringAudio];
     NSLog(@"didFinishSpeech");
 }

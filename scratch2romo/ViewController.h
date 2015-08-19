@@ -34,6 +34,7 @@
     NSString *ipRange;
     BOOL autoConnecting;
     BOOL faceAppeared;
+    BOOL speeching;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *connectButton;
