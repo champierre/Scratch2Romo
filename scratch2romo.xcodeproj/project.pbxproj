@@ -274,7 +274,7 @@
 				TargetAttributes = {
 					6623EF681A253E6200BDFBA7 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 75W9NK7L47;
+						DevelopmentTeam = 99M4WC2B7P;
 					};
 					6623EF811A253E6200BDFBA7 = {
 						CreatedOnToolsVersion = 6.1;
@@ -475,8 +475,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = scratch2romo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukurusha.scratch2romo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -499,8 +500,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = scratch2romo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsukurusha.scratch2romo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
